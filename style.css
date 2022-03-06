@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 70.5%; /* 1rem = 10px*/
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: arial;
+  color: white;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  background-color: #1e2337;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  margin-top: 5rem;
+}
+
+#form {
+  width: 50%;
+  background-color: white;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-item {
+  margin-bottom: 1rem;
+}
+.form-item label {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 1.5rem;
+}
+.form-item input,
+textarea {
+  padding: 1rem;
+  width: 100%;
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.form-inline {
+  font-size: 1.5rem;
+}
+
+textarea {
+  height: 200px;
+  font-family: inherit; /*This cancels the default font of the textarea*/
+  resize: none; /*This prevent the field to be extended*/
+}
+
+#btn {
+  color: #1e2337;
+  border: none;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#btn_search {
+  font-size: 1.5rem;
+}
+
+.error {
+  margin-top: 5px;
+  color: red;
+}
+.invisible {
+  display: none;
+}

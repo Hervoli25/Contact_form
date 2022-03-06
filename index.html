@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="title-image" href="img/collab1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>FormValidator</title>
+</head>
+
+<body>
+    <!--NAVBAR START HERE-->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top mb-2">
+
+        <a href="" class="navbar-brand"><i class="fa-brands fa-battle-net text-danger fa-3x"></i></a>
+
+        <!--Hamburger Menu Button-->
+        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav"><span
+                class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="nav">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-items"><a class="nav-link text-light text-uppercase font-weigh-bold px-3"
+                        href="#">Home<a>
+                </li>
+                <li class="nav-items"><a class="nav-link text-light text-uppercase font-weigh-bold px-3"
+                        href="#">Skills</a>
+                </li>
+                <li class="nav-item dropdown" data-toggle="dropdown"><a
+                        class="nav-link text-light text-uppercase font-weight-bold px-3 dropdown-toggle"
+                        href="#">Projects</a>
+                    <!--Dropdown menu for projects-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Project 1</a>
+                        <a class="dropdown-item" href="#">Project 2</a>
+                        <a class="dropdown-item" href="#">Project 3</a>
+                        <a class="dropdown-item" href="#">Project 4</a>
+                    </div>
+
+
+                <li class="nav-items"><a class="nav-link text-light text-uppercase font-weigh-bold px-3"
+                        href="#">Teams</a>
+                </li>
+                <li class="nav-items"><a class="nav-link text-light text-uppercase font-weigh-bold px-3"
+                        href="#">Contact</a></li>
+            </ul>
+            <form class="form-inline ml-3" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Here...">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-md btn-outline-primary" id="btn_search"><i
+                                class="fas fa-search text-muted"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <!--END OF NAVBAR-->
+
+    <!--Page main-title-->
+    <div class="container">
+        <div class="title-banner">
+            <h1 class="display-4 text-center text-warning py-2 mt-2" id="title">Contact Us Now</h1>
+        </div>
+        <form id="form">
+            <div class="form-item">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" placeholder="Your FirstName">
+                <div class="error invisible">This field must contain characters between two and ten </div>
+            </div>
+            <div class="form-item">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="Your LastName">
+                <div class="error invisible">This field must contain characters between three and fifteen</div>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-item">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="8" placeholder="Your Message"></textarea>
+                    <div class="error invisible">This field must contain characters between ten and hundred</div>
+                </div>
+            </div>
+            <button type="submit" id="btn" class="btn btn-outline-success">Submit</button>
+        </form>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-dark">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="text-white font-weight-light text-capitalize p-2"></h1>
+                    <h3 class="text-light font-weight-light font-italic mb-2">We Code & Create.</h3>
+                    <div class="py-2">
+                        <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                        <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                    </div>
+                    <p class="text-light py-2 m-0">&copy;Copyright 2022 - Made by Herve Kajingu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    </script>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
