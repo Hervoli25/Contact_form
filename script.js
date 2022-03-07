@@ -13,7 +13,7 @@ const title = document.getElementById("title");
 //trigger form validation
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  console.log("form sent");
+  swal("Your Message has been sent successfully 👌");
   //Collect input fields value
   let firstnameValue = firstname.value.trim();
   //Test if we've successfully collected input fields values
